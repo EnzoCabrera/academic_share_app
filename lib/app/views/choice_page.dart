@@ -19,11 +19,10 @@ class _ChoicePageState extends State<ChoicePage> {
                 padding: const EdgeInsets.only(
                     left: 30, right: 30, top: 250, bottom: 190),
                 child: Column(children: [
-                  
                   //BOTÃO 'UNIVERSITÁRIO'
                   ElevatedButton(
                       onPressed: () {
-                        print('Botão pressionado');
+                        Navigator.of(context).pushNamed('/SignInUniversity');
                       },
                       style: ElevatedButton.styleFrom(
                           minimumSize: Size(300, 100),
@@ -34,11 +33,11 @@ class _ChoicePageState extends State<ChoicePage> {
                         style: TextStyle(color: Colors.black, fontSize: 24.0),
                       )),
                   SizedBox(height: 60),
-                  
+
                   //BOTÃO 'USUÁRIO COMUM'
                   ElevatedButton(
                       onPressed: () {
-                        print('Botão pressionado');
+                        Navigator.of(context).pushNamed('/SignInNormalUser');
                       },
                       style: ElevatedButton.styleFrom(
                           minimumSize: Size(300, 100),

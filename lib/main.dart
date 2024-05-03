@@ -1,3 +1,5 @@
+import 'package:academic_share/app/views/choice_page.dart';
+import 'package:academic_share/app/views/login_page.dart';
 import 'package:academic_share/app/views/signin_normaluser_page.dart';
 import 'package:academic_share/app/views/signin_university_page.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +14,15 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SignInNormalUserPage()
+
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LoginPage(),
+        '/Choice':(context) => ChoicePage(),
+        '/SignInUniversity':(context) => SignInUniversityPage(),
+        '/SignInNormalUser':(context) => SignInNormalUserPage(),
+        
+      },
     );
   }
 }
