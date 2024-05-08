@@ -147,7 +147,7 @@ class _SignInUniversityPageState extends State<SignInUniversityPage> {
                             college == 'UNA' &&
                             course == 'Computer Science' &&
                             name == 'Enzo Nascimento Cabrera') {
-                          Navigator.of(context).pushNamed('/Choice');
+                          Navigator.of(context).pushNamed('/HomeUniversityPage');
                         } else {
                           print('Informações incorretas');
                         }

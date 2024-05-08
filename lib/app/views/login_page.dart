@@ -74,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: () {
                   if (email == 'enzo2005cabrera@gmail.com' &&
                       senha == 'M1d1t3c4') {
-                    Navigator.of(context).pushNamed('/SignInUniversity');
+                    Navigator.of(context).pushNamed('/HomeUniversityPage');
                   } else {
                     print('Email ou senha incorretos');
                   }

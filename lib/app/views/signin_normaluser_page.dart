@@ -71,7 +71,10 @@ class _SignInNormalUserPageState extends State<SignInNormalUserPage> {
                     //Botão de cadastro
                     SizedBox(height: 30),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).pushNamed('/HomeNormalUserPage');
+
+                      },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Color.fromARGB(255, 62, 163, 246),
                           minimumSize: Size(400, 50),
