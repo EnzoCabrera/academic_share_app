@@ -142,15 +142,9 @@ class _SignInUniversityPageState extends State<SignInUniversityPage> {
                     SizedBox(height: 10),
                     ElevatedButton(
                       onPressed: () {
-                        if (email == 'enzo2005cabrera@gmail.com' &&
-                            password == 'M1d1t3c4' &&
-                            college == 'UNA' &&
-                            course == 'Computer Science' &&
-                            name == 'Enzo Nascimento Cabrera') {
+                        
                           Navigator.of(context).pushNamed('/HomeUniversityPage');
-                        } else {
-                          print('Informações incorretas');
-                        }
+                        
                       },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Color.fromARGB(255, 62, 163, 246),

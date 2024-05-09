@@ -1,6 +1,7 @@
 import 'package:academic_share/app/views/choice_page.dart';
 import 'package:academic_share/app/views/home_normaluser_page.dart';
 import 'package:academic_share/app/views/home_university_page.dart';
+import 'package:academic_share/app/views/inside_post_page.dart';
 import 'package:academic_share/app/views/login_page.dart';
 import 'package:academic_share/app/views/signin_normaluser_page.dart';
 import 'package:academic_share/app/views/signin_university_page.dart';
@@ -25,6 +26,8 @@ class AppWidget extends StatelessWidget {
         '/SignInNormalUser':(context) => SignInNormalUserPage(),
         '/HomeUniversityPage':(context) => HomeUniversityPage(),
         '/HomeNormalUserPage':(context) => HomeNormalUserPage(),
+        '/InsidePostPage':(context) => InsidePostPage(),
+
 
 
         

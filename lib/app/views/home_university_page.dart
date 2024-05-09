@@ -16,7 +16,9 @@ class _HomeUniversityPageState extends State<HomeUniversityPage> {
         useMaterial3: true,
         brightness: isDark ? Brightness.dark : Brightness.light);
 
-    return Scaffold(
+    return MaterialApp(
+    theme: themeData,   
+    home: Scaffold(
       backgroundColor: Color.fromARGB(255, 39, 152, 245),
       body: SingleChildScrollView(
         child: Padding(
@@ -84,11 +86,10 @@ class _HomeUniversityPageState extends State<HomeUniversityPage> {
                 style: TextStyle(color: Colors.grey, fontSize: 20.0),
               ),
             ),
-
             SizedBox(height: 30),
             Container(
               width: double.infinity,
-              height: 500,
+              height: 579,
               child: ListView(
                 children: [
                   Card(
@@ -97,77 +98,245 @@ class _HomeUniversityPageState extends State<HomeUniversityPage> {
                     child: ListTile(
                       title: Padding(
                         padding: const EdgeInsets.all(0),
-                        child: Text(
-                          'Título: Inteligência artificail que cozinha...',
-                          style: TextStyle(fontSize: 17),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Título: Inteligência artificial que cozinha...',
+                              style: TextStyle(fontSize: 17),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                                'Assunto: Inteligência artificial na cozinha.'),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text('Autor: Enzo Nascimento',
+                                style: TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.bold)),
+                          ],
                         ),
                       ),
-                      subtitle:
-                          Text('Assunto: Inteligência artificial na cozinha.'),
-                      onTap: () {},
+                      onTap: () {
+                    Navigator.of(context).pushNamed('/InsidePostPage');
+
+                      },
                     ),
                   ),
                   SizedBox(height: 20),
                   Container(
                     width: double.infinity,
-                    height: 200,
+                    height: 140,
                     child: Card(
                       elevation: 10,
                       shadowColor: Colors.grey,
                       child: ListTile(
                         title: Padding(
                           padding: const EdgeInsets.all(0),
-                          child: Text(
-                            'Título: Inteligência artificail que cozinha...',
-                            style: TextStyle(fontSize: 17),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Título: Inteligência artificial que cozinha...',
+                                style: TextStyle(fontSize: 17),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                  'Assunto: Inteligência artificial na cozinha.'),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text('Autor: Enzo Nascimento',
+                                  style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold)),
+                            ],
                           ),
                         ),
-                        subtitle: Text(
-                            'Assunto: Inteligência artificial na cozinha.'),
                         onTap: () {},
                       ),
                     ),
                   ),
-
                   SizedBox(height: 20),
                   Container(
                     width: double.infinity,
-                    height: 200,
+                    height: 140,
                     child: Card(
                       elevation: 10,
                       shadowColor: Colors.grey,
                       child: ListTile(
                         title: Padding(
                           padding: const EdgeInsets.all(0),
-                          child: Text(
-                            'Título: Inteligência artificail que cozinha...',
-                            style: TextStyle(fontSize: 17),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Título: Inteligência artificial que cozinha...',
+                                style: TextStyle(fontSize: 17),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                  'Assunto: Inteligência artificial na cozinha.'),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text('Autor: Enzo Nascimento',
+                                  style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold)),
+                            ],
                           ),
                         ),
-                        subtitle: Text(
-                            'Assunto: Inteligência artificial na cozinha.'),
                         onTap: () {},
                       ),
                     ),
                   ),
-
                   SizedBox(height: 20),
                   Container(
                     width: double.infinity,
-                    height: 200,
+                    height: 140,
                     child: Card(
                       elevation: 10,
                       shadowColor: Colors.grey,
                       child: ListTile(
                         title: Padding(
                           padding: const EdgeInsets.all(0),
-                          child: Text(
-                            'Título: Inteligência artificail que cozinha...',
-                            style: TextStyle(fontSize: 17),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Título: Inteligência artificial que cozinha...',
+                                style: TextStyle(fontSize: 17),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                  'Assunto: Inteligência artificial na cozinha.'),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text('Autor: Enzo Nascimento',
+                                  style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold)),
+                            ],
                           ),
                         ),
-                        subtitle: Text(
-                            'Assunto: Inteligência artificial na cozinha.'),
+                        onTap: () {},
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  Container(
+                    width: double.infinity,
+                    height: 140,
+                    child: Card(
+                      elevation: 10,
+                      shadowColor: Colors.grey,
+                      child: ListTile(
+                        title: Padding(
+                          padding: const EdgeInsets.all(0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Título: Inteligência artificial que cozinha...',
+                                style: TextStyle(fontSize: 17),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                  'Assunto: Inteligência artificial na cozinha.'),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text('Autor: Enzo Nascimento',
+                                  style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold)),
+                            ],
+                          ),
+                        ),
+                        onTap: () {},
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  Container(
+                    width: double.infinity,
+                    height: 140,
+                    child: Card(
+                      elevation: 10,
+                      shadowColor: Colors.grey,
+                      child: ListTile(
+                        title: Padding(
+                          padding: const EdgeInsets.all(0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Título: Inteligência artificial que cozinha...',
+                                style: TextStyle(fontSize: 17),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                  'Assunto: Inteligência artificial na cozinha.'),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text('Autor: Enzo Nascimento',
+                                  style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold)),
+                            ],
+                          ),
+                        ),
+                        onTap: () {},
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  Container(
+                    width: double.infinity,
+                    height: 140,
+                    child: Card(
+                      elevation: 10,
+                      shadowColor: Colors.grey,
+                      child: ListTile(
+                        title: Padding(
+                          padding: const EdgeInsets.all(0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Título: Inteligência artificial que cozinha...',
+                                style: TextStyle(fontSize: 17),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                  'Assunto: Inteligência artificial na cozinha.'),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text('Autor: Enzo Nascimento',
+                                  style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold)),
+                            ],
+                          ),
+                        ),
                         onTap: () {},
                       ),
                     ),
@@ -178,6 +347,7 @@ class _HomeUniversityPageState extends State<HomeUniversityPage> {
           ]),
         ),
       ),
+    )
     );
   }
 }
