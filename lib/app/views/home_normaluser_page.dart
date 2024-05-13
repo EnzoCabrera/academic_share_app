@@ -19,6 +19,7 @@ class _HomeNormalUserPageState extends State<HomeNormalUserPage> {
     return MaterialApp(
     theme: themeData,
     home: Scaffold(
+      appBar: AppBar(backgroundColor: Colors.blue,),
       backgroundColor: Color.fromARGB(255, 39, 152, 245),
       body: SingleChildScrollView(
         child: Padding(

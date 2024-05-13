@@ -19,6 +19,7 @@ class _HomeUniversityPageState extends State<HomeUniversityPage> {
     return MaterialApp(
     theme: themeData,   
     home: Scaffold(
+      appBar: AppBar(backgroundColor: Colors.blue,),
       backgroundColor: Color.fromARGB(255, 39, 152, 245),
       body: SingleChildScrollView(
         child: Padding(
@@ -89,7 +90,7 @@ class _HomeUniversityPageState extends State<HomeUniversityPage> {
             SizedBox(height: 30),
             Container(
               width: double.infinity,
-              height: 579,
+              height: 577,
               child: ListView(
                 children: [
                   Card(

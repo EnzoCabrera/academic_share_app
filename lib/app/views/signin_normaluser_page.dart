@@ -11,6 +11,7 @@ class _SignInNormalUserPageState extends State<SignInNormalUserPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(backgroundColor: Colors.blue,),
         backgroundColor: Color.fromARGB(255, 39, 152, 245),
         body: SingleChildScrollView(
           child: SizedBox(
@@ -18,7 +19,7 @@ class _SignInNormalUserPageState extends State<SignInNormalUserPage> {
               height: MediaQuery.of(context).size.height,
               child: Padding(
                   padding: const EdgeInsets.only(
-                      left: 30, right: 30, top: 250, bottom: 10),
+                      left: 30, right: 30, top: 180, bottom: 10),
                   child: Column(children: [
                     //Label de nome
                     TextField(
