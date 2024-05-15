@@ -1,3 +1,5 @@
+import 'package:academic_share/app/components/choice_normaluser_widget.dart';
+import 'package:academic_share/app/components/choice_university_widget.dart';
 import 'package:flutter/material.dart';
 
 class ChoicePage extends StatefulWidget {
@@ -21,33 +23,11 @@ class _ChoicePageState extends State<ChoicePage> {
                     left: 30, right: 30, top: 180, bottom: 190),
                 child: Column(children: [
                   //BOTÃO 'UNIVERSITÁRIO'
-                  ElevatedButton(
-                      onPressed: () {
-                        Navigator.of(context).pushNamed('/SignInUniversity');
-                      },
-                      style: ElevatedButton.styleFrom(
-                          minimumSize: Size(300, 100),
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20.0))),
-                      child: Text(
-                        'Universitário',
-                        style: TextStyle(color: Colors.black, fontSize: 24.0),
-                      )),
-                  SizedBox(height: 60),
+                  ChoiceUniverstityWidget(),
+                  SizedBox(height: 50,),
 
                   //BOTÃO 'USUÁRIO COMUM'
-                  ElevatedButton(
-                      onPressed: () {
-                        Navigator.of(context).pushNamed('/SignInNormalUser');
-                      },
-                      style: ElevatedButton.styleFrom(
-                          minimumSize: Size(300, 100),
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20.0))),
-                      child: Text(
-                        'Usuário comum',
-                        style: TextStyle(color: Colors.black, fontSize: 24.0),
-                      ))
+                  ChoiceNormalUserWidget()
                 ]))));
   }
 }
